@@ -43,7 +43,7 @@ nok conflict-events(<22:00 10:00>, <10:00 22:00>), "default";
 nok conflict-events(<10:59 22:00>, <22:01 11:00>), "default";
 # (More tests are probably needed)
 
-sub conflict-events(@a,@b)
+sub conflict-events(@a, @b)
 {
     given (@a, @b).flat
     {
